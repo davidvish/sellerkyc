@@ -11,6 +11,8 @@ import {
 } from 'react-native';
 import { Picker } from '@react-native-picker/picker';
 import { launchImageLibrary } from 'react-native-image-picker';
+import { categoryData } from '../assets/categoryData';
+import DropdownSelect from '../components/DropdownSelect';
 
 const ShopSettings = () => {
   const [shopName, setShopName] = useState('');
@@ -54,6 +56,8 @@ const ShopSettings = () => {
       <Text style={styles.label}>Shop Name</Text>
       <TextInput
         style={styles.input}
+                  placeholderTextColor={'#000'}
+
         placeholder="Enter shop name"
         value={shopName}
         onChangeText={setShopName}
@@ -70,19 +74,12 @@ const ShopSettings = () => {
       </TouchableOpacity>
 
       {/* Category */}
-      <Text style={styles.label}>Shop Category</Text>
-      <View style={styles.pickerWrapper}>
-        <Picker
-          selectedValue={category}
-          onValueChange={(value) => setCategory(value)}
-        >
-          <Picker.Item label="Select Category" value="" />
-          <Picker.Item label="Grocery" value="grocery" />
-          <Picker.Item label="Pharmacy" value="pharmacy" />
-          <Picker.Item label="Electronics" value="electronics" />
-          <Picker.Item label="Fashion" value="fashion" />
-        </Picker>
-      </View>
+      <DropdownSelect
+          label="Select Category"
+          data={categoryData}
+          value={category}
+          onChange={(item) => setCategory(item.value)}
+        />
 
       {/* Delivery Zones */}
       <Text style={styles.label}>Delivery Zones</Text>

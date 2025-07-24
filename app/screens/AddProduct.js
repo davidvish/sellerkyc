@@ -85,6 +85,7 @@ const AddEditProduct = () => {
         <TextInput
           style={styles.input}
           placeholder="Enter product name"
+          placeholderTextColor={'#000'}
           value={productName}
           onChangeText={setProductName}
         />
@@ -93,6 +94,7 @@ const AddEditProduct = () => {
         <TextInput
           style={[styles.input, styles.textArea]}
           placeholder="Enter product description"
+          placeholderTextColor={'#000'}
           multiline
           numberOfLines={4}
           value={description}
@@ -111,6 +113,7 @@ const AddEditProduct = () => {
         <View style={styles.row}>
           <TextInput
             style={[styles.input, styles.halfInput]}
+            placeholderTextColor={'#000'}
             placeholder="Size"
             value={size}
             onChangeText={setSize}
@@ -118,6 +121,8 @@ const AddEditProduct = () => {
           <TextInput
             style={[styles.input, styles.halfInput]}
             placeholder="Color"
+                      placeholderTextColor={'#000'}
+
             value={color}
             onChangeText={setColor}
           />
@@ -126,6 +131,8 @@ const AddEditProduct = () => {
         <Text style={styles.label}>Price (₹)</Text>
         <TextInput
           style={styles.input}
+                    placeholderTextColor={'#000'}
+
           keyboardType="numeric"
           placeholder="Enter price"
           value={price}
@@ -135,6 +142,8 @@ const AddEditProduct = () => {
         <Text style={styles.label}>SKU</Text>
         <TextInput
           style={styles.input}
+                    placeholderTextColor={'#000'}
+
           placeholder="Enter SKU"
           value={sku}
           onChangeText={setSku}
@@ -143,6 +152,8 @@ const AddEditProduct = () => {
         <Text style={styles.label}>Inventory</Text>
         <TextInput
           style={styles.input}
+                    placeholderTextColor={'#000'}
+
           keyboardType="numeric"
           placeholder="Enter stock quantity"
           value={inventory}
@@ -152,6 +163,8 @@ const AddEditProduct = () => {
         <Text style={styles.label}>Shipping Details</Text>
         <TextInput
           style={[styles.input, styles.textArea]}
+                    placeholderTextColor={'#000'}
+
           placeholder="e.g., Free shipping, ₹50 charge, etc."
           multiline
           numberOfLines={3}
@@ -219,7 +232,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: '#E5E7EB',
     fontSize: 14,
-    color: '#111827',
+    color: '#000',
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 1 },
     shadowOpacity: 0.03,

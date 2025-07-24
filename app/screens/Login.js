@@ -104,6 +104,8 @@ const handleLogin = () => {
 
               <TextInput
                 style={styles.input}
+                          placeholderTextColor={'#000'}
+
                 placeholder="Mobile Number"
                 keyboardType="number-pad"
                 value={mobile}
@@ -125,6 +127,8 @@ const handleLogin = () => {
                 style={styles.input}
                 placeholder="Enter OTP"
                 keyboardType="number-pad"
+                          placeholderTextColor={'#000'}
+
                 value={otp}
                 onChangeText={setOtp}
                 maxLength={6}
@@ -146,6 +150,8 @@ const handleLogin = () => {
             value={pan}
             onChangeText={setPan}
             autoCapitalize="characters"
+                      placeholderTextColor={'#000'}
+
             maxLength={10}
           />
           {errors.pan && <Text style={styles.error}>{errors.pan}</Text>}
@@ -154,6 +160,8 @@ const handleLogin = () => {
             style={styles.input}
             placeholder="GST Number"
             value={gst}
+                      placeholderTextColor={'#000'}
+
             onChangeText={setGst}
             autoCapitalize="characters"
             maxLength={15}
@@ -165,6 +173,8 @@ const handleLogin = () => {
             placeholder="Bank Details (Account No, IFSC)"
             value={bank}
             onChangeText={setBank}
+                      placeholderTextColor={'#000'}
+
           />
           {errors.bank && <Text style={styles.error}>{errors.bank}</Text>}
 
@@ -222,6 +232,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     fontSize: 16,
     marginBottom: 14,
+    color:'#000'
   },
   button: {
     backgroundColor: '#1A73E8',
