@@ -1,0 +1,20 @@
+export const LOGIN_REQUEST = "LOGIN_REQUEST"
+export const LOGIN_FAILURE = "LOGIN_FAILURE"
+export const LOGIN_SUCCESS = "LOGIN_SUCCESS"
+
+export const LOGOUT = "LOGOUT"
+
+export const KYC_REQUEST = "KYC_REQUEST"
+export const KYC_FAILURE = "KYC_FAILURE"
+export const KYC_SUCCESS = "KYC_SUCCESS"
+
+export const KYCSUCCESS = "KYCSUCCESS";
+
+
+export const ADD_PRODUCT_REQUEST = "ADD_PRODUCT_REQUEST"
+export const ADD_PRODUCT_FALIUER = "ADD_PRODUCT_FALIUER"
+export const ADD_PRODUCT_SUCCESS = "ADD_PRODUCT_SUCCESS"
+
+
+
+
